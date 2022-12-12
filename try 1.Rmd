@@ -1,0 +1,35 @@
+---
+title: "Assignment_3_Diana"
+author: "Diana"
+date: "2022-11-26"
+output:
+  word_document: default
+  html_document: default
+---
+
+```{r}
+heart <- read.csv("heart_failure.csv", header = TRUE)
+heart$anaemia <- as.factor(heart$anaemia)
+heart$diabetes <- as.factor(heart$diabetes)
+heart$smoking <- as.factor(heart$smoking)
+heart$high_blood_pressure <- as.factor(heart$high_blood_pressure)
+```
+
+###Question 1 [5 marks]
+
+The true mean age of patients is assumed to be greater than 67 years.Test this hypothesis
+at a 5% level of significance.
+
+```{r}
+
+```
+
+###Question 2 [5 marks]
+
+The true mean serum sodium of patients who do not smoke is assumed to be more than
+137.Test this hypothesis at a 1% level of significance.
+
+###Question 3 [5 marks]
+
+It is hypothesized that the true mean age of is greater in patients with high blood pressure
+than those without high blood pressure.Test this hypothesis at a 5% level of significance.
